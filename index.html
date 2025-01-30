@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .holiday { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Class Attendance Tracker</h1>
+
+    <label for="date">Select Date:</label>
+    <input type="date" id="date">
+
+    <p id="holiday-info" class="holiday"></p>
+
+    <h2>Mark Attendance</h2>
+    <div id="subjects"></div>
+
+    <button onclick="saveAttendance()">Save Attendance</button>
+
+    <h3>Attendance Percentage: <span id="percentage">0%</span></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
